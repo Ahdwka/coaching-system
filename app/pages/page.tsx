@@ -14,8 +14,8 @@ export default async function Home1() {
               <BlurFade delay={0.25} inView>
                 طريقك الأسهل لوصول لجسم مثالي وصحي
               </BlurFade>
-
-</div>            <div className="z-50 px-6 text-xl justify-center text-red-600 my-6 md:my-6 gap-4 md:gap-16">
+            </div>{" "}
+            <div className="z-50 px-6 text-xl justify-center text-red-600 my-6 md:my-6 gap-4 md:gap-16">
               <BlurFade delay={0.45} inView>
                 <WordRotate
                   duration={3500}
@@ -46,11 +46,11 @@ export default async function Home1() {
         <div className="py-2 md:py-4 w-full h-80 overflow-hidden bg-muted">
           <AnimatedListDemo />
         </div>
-        <div className="pt-10">
-        </div>
+        <div className="pt-10"></div>
         <div>برامج وخطط خاصة فيك معك عموبايلك</div>
         <div>فيديوهات شرح لكل تمرين بالتفصيل</div>
         <div>برامج غذائية</div>
+        <div>pricing</div>
         <div>اليوم الطريق قدامك</div>
       </div>
     </>
