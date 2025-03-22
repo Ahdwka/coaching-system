@@ -4,6 +4,7 @@ import { IBM_Plex_Sans_Arabic } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { Sidebar } from "@/components/sidebar";
+import Footer from "@/components/Footer";
 
 const arabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
@@ -26,7 +27,7 @@ export default function RootLayout({
         name="format-detection"
         content="telephone=no, date=no, email=no, address=no"
       />
-      <body className={arabic.className}>
+      <body className={arabic.className} >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -36,10 +37,11 @@ export default function RootLayout({
           <div className="">
             <Navbar />
           </div>
-          <div className="flex mt-16">
+            <div className="flex mt-16">
             <Sidebar />
           </div>
           <main className="flex-1 lg:mr-[16vw] md:mr-[23vw]">{children}</main>
+          <div className="lg:mr-[16vw] md:mr-[23vw] fixed bottom-0 left-0 right-0"> <Footer/> </div>
         </ThemeProvider>
       </body>
     </html>

@@ -1,11 +1,9 @@
-import { CardsCarousel } from "@/components/cardsCarousel";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { NumberTicker } from "@/components/magicui/number-ticker";
 import { Particles } from "@/components/magicui/particles";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { WordRotate } from "@/components/magicui/word-rotate";
 import { AnimatedListDemo } from "@/components/ui/AnimatedListDemo";
-import { Particle } from "@tsparticles/engine";
 export default async function Home1() {
   return (
     <>
@@ -49,7 +47,6 @@ export default async function Home1() {
           <AnimatedListDemo />
         </div>
         <div className="pt-10">
-          <CardsCarousel />
         </div>
         <div>برامج وخطط خاصة فيك معك عموبايلك</div>
         <div>فيديوهات شرح لكل تمرين بالتفصيل</div>
